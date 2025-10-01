@@ -1,13 +1,17 @@
 import { useState } from 'react'
 import Nav from './components/Nav'
-import HomeIndex from './pages/Home/homeIndex'
+import Partners from './pages/Home/Partners'
+import Home from './pages/Home/Home'
+import NFT from './pages/Home/NFT'
 
 function App() {
 
   return (
     <>
       <Nav />
-      <HomeIndex />
+      <Home />
+      <Partners />
+      <NFT />
     </>
   )
 }
