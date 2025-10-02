@@ -3,6 +3,8 @@ import Nav from './components/Nav'
 import Partners from './pages/Home/Partners'
 import Home from './pages/Home/Home'
 import NFT from './pages/Home/NFT'
+import Users from './pages/Home/Users'
+import Steps from './pages/Home/Steps'
 
 function App() {
 
@@ -12,6 +14,8 @@ function App() {
       <Home />
       <Partners />
       <NFT />
+      <Users />
+      <Steps />
     </>
   )
 }

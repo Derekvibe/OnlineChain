@@ -4,7 +4,6 @@ import React from "react";
 function Home() {
   return (
     <section className="flex flex-col md:flex-row items-center justify-between px-6 md:px-6 lg:px-6 py-4 md:py-16">
-      {/* Left Content */}
       <div className="w-full md:w-1/2 text-center md:text-left">
         <h1 className="font-inter font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-[70px] lg:leading-[80px] text-white">
           The{" "}
@@ -23,7 +22,6 @@ function Home() {
           learning curve for students worldwide
         </p>
 
-        {/* CTA Button */}
         <div className="flex justify-center md:justify-start">
           <button className="mt-6 px-5 py-3 rounded-4xl bg-gradient-to-r from-three-purple to-three-blue text-white font-semibold flex items-center gap-2 hover:opacity-90 transition">
             Open App
@@ -31,7 +29,6 @@ function Home() {
           </button>
         </div>
 
-        {/* Hero Illustration */}
         <img
           src="/Frame_1.png"
           alt="Hero Illustration"
@@ -39,7 +36,6 @@ function Home() {
         />
       </div>
 
-      {/* Right Banner Image */}
       <div className="hidden md:flex w-full md:w-1/2 justify-center md:justify-end mt-10 md:mt-0">
         <img
           src="/div.banner__images-two.png"
