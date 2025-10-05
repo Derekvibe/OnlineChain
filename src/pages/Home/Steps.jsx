@@ -1,7 +1,15 @@
 import React from 'react'
+import { motion } from "framer-motion";
+
 
 function Steps() {
   return (
+     <motion.section
+      id="steps"
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
     <div className="mt-20 px-6 py-12">
   {/* Heading */}
   <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold font-inter mb-12 text-white">
@@ -64,7 +72,8 @@ function Steps() {
       </p>
     </div>
   </div>
-</div>
+      </div>
+      </motion.section>
 
   )
 }

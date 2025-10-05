@@ -4,11 +4,17 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion"
-import { ChevronDown } from "lucide-react"
+import { motion } from "framer-motion";
+
 
 function FAQ() {
   return (
-    <div >
+    <motion.section
+      id="faq"
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
       <div className="w-full mx-auto px-4 max-w-3xl lg:w-1/3 m-auto ">
         
         <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold font-inter mb-12 text-white mt-12"> Answers To Your  {" "}
@@ -130,7 +136,7 @@ function FAQ() {
       
      
     
-    </div>
+    </motion.section>
   )
 }
 

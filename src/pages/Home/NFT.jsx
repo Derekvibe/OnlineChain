@@ -2,7 +2,6 @@ import React from 'react'
 
 function NFT() {
   return (
-    <>
       <div className='mt-16 px-6 py-6'>
         {/* Header */}
         <div>
@@ -66,7 +65,6 @@ function NFT() {
           </div>
         </div>
       </div>
-    </>
   )
 }
 

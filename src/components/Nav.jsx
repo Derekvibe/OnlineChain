@@ -7,7 +7,7 @@ function Nav() {
   return (
     <nav className="sticky top-0 z-50 flex justify-between items-center px-6 py-4 backdrop-blur-md">
       {/* Logo */}
-      <a href="/">
+      <a href="#home">
         <img
           src="/web3task_logo.png"
           alt="Web3Task Logo"
@@ -19,13 +19,13 @@ function Nav() {
       <div className="hidden md:flex items-center gap-8">
         <ul className="flex gap-6">
           <li>
-            <a href="/" className="text-white hover:text-blue-400 transition">
+            <a href="#home" className="text-white hover:text-blue-400 transition">
               Home
             </a>
           </li>
           <li>
             <a
-              href="#how-it-works"
+              href="#steps"
               className="text-white hover:text-blue-400 transition"
             >
               How it Works
@@ -63,14 +63,14 @@ function Nav() {
       {isOpen && (
         <div className="absolute top-full left-0 w-full bg-black/95 flex flex-col items-center gap-6 py-6 md:hidden">
           <a
-            href="/"
+            href="#home"
             className="text-white hover:text-blue-400 transition"
             onClick={() => setIsOpen(false)}
           >
             Home
           </a>
           <a
-            href="#how-it-works"
+            href="#steps"
             className="text-white hover:text-blue-400 transition"
             onClick={() => setIsOpen(false)}
           >

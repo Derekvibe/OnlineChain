@@ -7,6 +7,8 @@ import Users from './pages/Home/Users'
 import Steps from './pages/Home/Steps'
 import Roadmap from './pages/Home/Roadmap'
 import FAQ from './pages/Home/FAQ'
+import Build from './pages/Home/Build'
+import Footer from './pages/Home/Footer'
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
       <Steps />
       <Roadmap />
       <FAQ />
+      <Build />
+      <Footer />
     </>
   )
 }

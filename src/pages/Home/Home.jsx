@@ -1,9 +1,16 @@
 import { ArrowUpRight } from "lucide-react";
+import { motion } from "framer-motion";
+
 import React from "react";
 
 function Home() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between px-6 md:px-6 lg:px-6 py-4 md:py-16">
+    <motion.section
+      id="home"
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="flex flex-col md:flex-row items-center justify-between px-6 md:px-6 lg:px-6 py-4 md:py-16">
       <div className="w-full md:w-1/2 text-center md:text-left">
         <h1 className="font-inter font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-[70px] lg:leading-[80px] text-white">
           The{" "}
@@ -44,7 +51,7 @@ function Home() {
         />
 </div>
 
-    </section>
+    </motion.section>
   );
 }
 
